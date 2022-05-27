@@ -1,12 +1,17 @@
 # Reverse Engineering the ScanDoc Compact J2534 Passthru Adapter
 
+![](scandoc-compact.jpg)
+
 The ScanDoc (Compact) is a J2534 Passthru Adapter manufactured by [QuantexLab](https://www.quantexlab.ru).
 It is a powerful small adapter that communicates via WiFi.
 Being a J2534 Passthru adapter as specified by the SAE, it comes with a closed source Win32 dynamic library that offers
 the J2534 API. On request, you'll also get a closed source macOS/iOS library ­– which doesn't work quite right though.
 
-This is an effort to document the _native_ TCP protocol in order to make the adapter more versatile.
-I no longer work with the device, but leave that information here for anyone else to contribute.
+Unfortunately the _native_ TCP protocol is not documented, which is quite sad since the hardware is of very high
+quality ­– it even supports OBD2 sockets in trucks, which are 24V powered (don't try this with off-the-shelf OBD2 adapters).
+This is an effort to document this TCP protocol in order to make the adapter more versatile.
+
+Personally, I no longer work with the device, but leave that information here for anyone else to contribute.
 
 ## TCP Service
 
